@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 16px;
+}
+
+button:disabled {
+    background-color: #c0c0c0;
+    cursor: not-allowed;
+}
+
+#feedback-container {
+    margin-top: 20px;
+}
+
+.feedback-word {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.correct {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.incorrect {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+#status {
+    font-weight: bold;
+    margin-top: 20px;
+}
+form {
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+audio {
+    width: 100%;
+    border: none;
+    margin-top: 20px;
+    outline: none;
+    background: #f8f9fa;
+}
+.feedback-word {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding: 0 5px;
+}
+.feedback-word .tooltip {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 5px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    white-space: nowrap;
+}
+.feedback-word:hover .tooltip {
+    display: block;
+}

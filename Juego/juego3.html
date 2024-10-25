@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Pronunciación</title>
+    <link rel="stylesheet" href="../CSS/style3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Juego de Pronunciación</h1>
+        <div id="sentence-container">
+            <p id="sentence">¡Haz clic en el botón para comenzar el juego!</p>
+        </div>
+        <button id="start-btn">Comenzar Juego</button>
+        <div id="round-info">
+            <p id="round-count">Ronda: 0/10</p>
+        </div>
+        <div id="feedback-container">
+            <!-- La retroalimentación será generada aquí -->
+        </div>
+        <p id="status"></p>
+        <audio id="audio" controls></audio>
+        <form action="../INDEX.html" method="get">
+            <input type="submit" value="Regresar">
+        </form>
+        <button id="next-round-btn" disabled>Siguiente Ronda</button>
+        <div id="error-summary" style="display: none;">
+            <h2>Resumen de Errores</h2>
+            <ul id="error-list"></ul>
+        </div>
+    </div>
+    <script src="../JavaS/js3.js"></script>
+</body>
+</html>

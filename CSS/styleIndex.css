@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main, section, form {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+main {
+    animation: fadeInUp 1s forwards 0.5s;
+}
+
+section {
+    animation: fadeInUp 1s forwards 1s;
+}
+
+form {
+    animation: fadeInUp 1s forwards 1.5s;
+}
+
+.button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 10px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f8ff;
+}
+
+.menu {
+    display: flex; /* Para alinear los elementos en línea */
+    justify-content: center; /* Centrar elementos en el contenedor */
+    margin: 2em 0; /* Espacio entre el menú y los formularios */
+}
+
+.dropdown {
+    position: relative; /* Para posicionar el contenido desplegable */
+    margin: 0 1em; /* Espaciado entre los dropdowns */
+}
+
+.dropbtn {
+    background-color: #007BFF; /* Color azul */
+    color: white; /* Color del texto */
+    padding: 15px; /* Aumentar espaciado interno */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    border-radius: 0.25em; /* Bordes redondeados */
+    font-size: 1.125em; /* Aumentar tamaño de fuente */
+    transition: background-color 0.3s, transform 0.3s; /* Transición suave */
+}
+
+.dropbtn:hover {
+    background-color: #0056b3; /* Color azul más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Aumentar ligeramente al pasar el mouse */
+}
+
+.dropdown-content {
+    display: none; /* Oculto por defecto */
+    position: absolute; /* Para que se superponga al contenido */
+    background-color: #f9f9f9; /* Color de fondo */
+    min-width: 200px; /* Aumentar ancho mínimo */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra */
+    z-index: 1; /* Asegurarse de que esté por encima de otros elementos */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Mostrar las subopciones al pasar el mouse por el menú */
+}
+
+.dropdown-content .button {
+    padding: 10px; /* Espaciado interno de los botones */
+    background-color: #007BFF; /* Color azul */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    text-align: left; /* Alinear texto a la izquierda */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    width: 100%; /* Botón ocupa todo el ancho */
+}
+
+.dropdown-content .button:hover {
+    background-color: #0056b3; /* Cambiar color de fondo al pasar el mouse */
+}
+h1 {
+    font-size: 3em; /* Tamaño de fuente más grande */
+    color: #0056b3; /* Color azul oscuro */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+    margin: 1em 0; /* Espacio alrededor del encabezado */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #e0f7fa; /* Color de fondo suave */
+    display: inline-block; /* Ajustar el tamaño del fondo al texto */
+}
+

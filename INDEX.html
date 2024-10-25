@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botones</title>
+    <link rel="stylesheet" href="CSS/styleIndex.css">
+    <script src="JavaS/jsIndex.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>BIENVENIDOS</h1>
+    </main>
+    <section>
+        <h2>ELIGE EL MODO QUE QUIERAS PRACTICAR TU INGLÉS</h2>
+    </section>
+
+    <div class="menu">
+        <div class="dropdown">
+            <button class="dropbtn" onmouseover="mostrarOpciones('foneticaOptions')" onmouseout="ocultarOpciones('foneticaOptions')">
+                La fonética: mejora tu pronunciación
+            </button>
+            <div id="foneticaOptions" class="dropdown-content">
+                <form action="Juego/juego3.html" method="get">
+                    <input type="submit" value="MEJORA TU PRONUNCIACIÓN" class="button">
+                </form>
+                <form action="php/TablaFonetica.html" method="post">
+                    <input type="submit" value="TABLA FONÉTICA" class="button">
+                </form>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn" onmouseover="mostrarOpciones('lectoescrituraOptions')" onmouseout="ocultarOpciones('lectoescrituraOptions')">
+                La lectoescritura: mejora tu entendimiento
+            </button>
+            <div id="lectoescrituraOptions" class="dropdown-content">
+                <form action="Juego/juego.html" method="get">
+                    <input type="submit" value="JUEGO DE PALABRAS" class="button">
+                </form>
+                <form action="Juego/juego2.html" method="get">
+                    <input type="submit" value="CONSTRUYE LA ORACIÓN" class="button">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <script src="JavaS/jsIndex.js"></script>
+    </footer>
+</body>
+</html>

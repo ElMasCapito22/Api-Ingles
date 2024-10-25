@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f8ff;
+    padding: 1.25em; /* Espaciado alrededor del contenido */
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    margin: 0 auto;
+    box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.2);
+    max-width: 37.5em; /* 600px */
+    padding: 1em; /* Espaciado interno */
+    border-radius: 0.5em; /* Bordes redondeados */
+}
+
+header {
+    background-color: #BBB5CE; /* Color de fondo */
+    padding: 10px; /* Espaciado interno */
+}
+
+h1 {
+    color: #333; /* Color del texto */
+    margin-bottom: 1em; /* Espacio debajo del encabezado */
+}
+
+ul {
+    list-style-type: none; /* Sin viñetas */
+    padding-left: 0; /* Sin padding */
+}
+
+li {
+    margin: 10px 0; /* Margen para los elementos de la lista */
+    font-size: 1.1em; /* Tamaño de fuente */
+}
+
+li ul {
+    margin-top: 0.5em; /* Margen para sublistas */
+    margin-left: 1.25em; /* Indentación para sublistas */
+}
+
+li ul li {
+    font-size: 1em; /* Tamaño de fuente para los elementos de sublistas */
+}
+
+table {
+    width: 50%; /* Usar el 100% del contenedor */
+    border-collapse: collapse;
+    margin-bottom: 2em; /* Espacio entre las tablas */
+    margin-left: 2em;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+    height: 3em; /* Altura de las celdas */
+    border: none; /* Sin bordes */
+}
+
+img {
+    width: 2.5em; /* Tamaño de la imagen */
+    height: 2.5em;
+}
+
+button {
+    font-size: 1.125em; /* Tamaño de fuente del botón */
+    padding: 0.625em 0.9375em; /* Espaciado en el botón */
+    border: none;
+    border-radius: 0.3125em; /* Bordes redondeados */
+    cursor: pointer;
+    background-color: #BBB5CE;
+    color: white;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #156dcb;
+}
+
+header ul {
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin padding */
+    display: flex; /* Para que los elementos estén en línea (horizontalmente) */
+}
+
+header ul li {
+    margin-right: 20px; /* Espacio entre elementos */
+    color: white; /* Texto en blanco */
+    transition: all 0.3s ease; /* Transición suave para el hover */
+}
+
+header ul li:hover {
+    background-color: white; /* Fondo blanco al pasar el mouse */
+    color: blue; /* Texto azul al pasar el mouse */
+    padding: 5px; /* Espaciado adicional al pasar el mouse */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+header ul a {
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    color: inherit; /* Hereda el color del li */
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.btntabla2, .btntabla21 {
+    font-size: 1.125em; /* Tamaño de fuente del botón */
+    padding: 0.625em 0.9375em; /* Espaciado en el botón */
+    border: none;
+    border-radius: 0.3125em; /* Bordes redondeados */
+    cursor: pointer;
+    background-color: #e29696;
+    color: white;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#message {
+    font-size: 1.125em; /* Tamaño de fuente del mensaje */
+    color: #d9534f;
+    margin: 1.25em 0; /* Margen para el mensaje */
+}
+
+.held-box {
+    position: fixed; /* Permite que el box esté fijo en la pantalla */
+    top: 50%; /* Centramos verticalmente */
+    right: 0; /* Ubicación a la derecha */
+    transform: translateY(-50%); /* Ajustamos para que quede centrado */
+    width: 15em; /* Ancho del held box */
+    padding: 0.75em; /* Espaciado interno */
+    background-color: #f8f9fa; /* Color de fondo */
+    border: 1px solid #ccc; /* Bordes */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    overflow-y: auto; /* Permite desplazamiento si el contenido es muy largo */
+    max-height: 90%; /* Limita la altura máxima */
+}
+
+.held-box h2 {
+    color: #333; /* Color del título */
+}
+
+.held-box p {
+    color: #555; /* Color del texto del párrafo */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+.held-box ul {
+    list-style-type: square; /* Cambiar estilo de viñetas */
+    padding-left: 20px; /* Añadir padding para la lista */
+}
+
+.held-box li {
+    margin: 8px 0; /* Ajustar margen para elementos de lista en held box */
+    font-size: 1.1em; /* Tamaño de fuente ligeramente mayor para claridad */
+}
+
+caption {
+    font-size: 1.5em; /* Tamaño de fuente más grande */
+    color: #333; /* Color del texto */
+    background-color: #e0e0e0; /* Color de fondo suave */
+    padding: 0.5em; /* Espaciado interno */
+    margin-bottom: 1em; /* Espacio debajo del caption */
+    border-radius: 0.5em; /* Bordes redondeados */
+    text-align: center; /* Centrar texto */
+}
+
+/* Media Queries */
+@media (max-width: 420px) {
+    .held-box {
+        position: relative; /* Cambiar a relativo */
+        width: 100%; /* Ancho completo */
+        max-height: none; /* Sin límite de altura */
+        margin-top: 20px; /* Espacio arriba */
+        padding: 0.75em; /* Espaciado interno */
+        box-shadow: none; /* Sin sombra */
+    }
+}
+
+@media (min-width: 421px) and (max-width: 720px) {
+    .held-box {
+        position: relative; /* Cambiar a relativo */
+        width: 100%; /* Ancho completo */
+        max-height: none; /* Sin límite de altura */
+        margin-top: 20px; /* Espacio arriba */
+        padding: 0.75em; /* Espaciado interno */
+        box-shadow: none; /* Sin sombra */
+    }
+}
+
+@media (min-width: 721px) and (max-width: 900px) {
+    .held-box {
+        width: 15em; /* Ancho reducido */
+        max-height: 80%; /* Altura máxima */
+        overflow-y: auto; /* Habilitar desplazamiento */
+        padding: 0.5em; /* Espaciado interno */
+    }
+}
+
+@media (min-width: 901px) {
+    .held-box {
+        width: 20em; /* Ancho mayor */
+        max-height: 90%;
+        overflow-y: auto; /* Habilitar desplazamiento */
+        padding: 0.5em; /* Espaciado interno */
+    }
+}

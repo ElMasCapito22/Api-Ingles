@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#game-container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #5a5a5a;
+}
+
+#sentence-container {
+    margin-bottom: 20px;
+}
+
+#sentence-spanish {
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-weight: bold;
+    background-color: #e7f0ff;
+    border: 1px solid #d0e4ff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#words-container {
+    margin-bottom: 20px;
+}
+
+.word-button {
+    margin: 5px;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.word-button:hover {
+    background: #0056b3;
+}
+
+.word-button.ticked {
+    background: #d3d3d3;
+    color: #888;
+    cursor: not-allowed;
+}
+
+#sentence-output-container {
+    margin: 20px 0;
+}
+
+#sentence-output {
+    font-size: 1.2em;
+    margin: 10px 0;
+    min-height: 40px;
+    background-color: #f0f8ff;
+    border: 1px solid #d0e4ff;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+}
+
+#sentence-output span {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px;
+}
+
+#sentence-output span.ticked {
+    text-decoration: line-through;
+    color: gray;
+}
+
+#feedback {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+#score-container {
+    margin-top: 20px;
+}
+input[type="submit"] {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
